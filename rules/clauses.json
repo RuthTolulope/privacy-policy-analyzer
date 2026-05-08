@@ -24,5 +24,218 @@
             "analytics",
             "purpose"
         ]
+    },
+    {
+        "name": "Legal basis for processing",
+        "category": "Transparency",
+        "keywords": [
+            "legal basis",
+            "lawful basis",
+            "legitimate interest",
+            "consent",
+            "contractual necessity",
+            "Article 6",
+            "grounds for processing"
+        ]
+    },
+    {
+        "name": "Data sharing and disclosure",
+        "category": "Transparency",
+        "keywords": [
+            "share your data",
+            "third parties",
+            "service providers",
+            "affiliates",
+            "legal disclosure",
+            "recipients",
+            "with whom we share"
+        ]
+    },
+    {
+        "name": "Right to access",
+        "category": "User rights",
+        "keywords": [
+            "right to access",
+            "copy of your data",
+            "access request",
+            "view your information",
+            "DSAR",
+            "SAR"
+        ]
+    },
+    {
+        "name": "Right to rectification",
+        "category": "User rights",
+        "keywords": [
+            "right to rectification",
+            "correct your data",
+            "update your information",
+            "accuracy of personal data",
+            "incomplete information",
+            "rectify"
+        ]
+    },
+    {
+        "name": "Right to erasure",
+        "category": "User rights",
+        "keywords": [
+            "right to erasure",
+            "delete your data",
+            "right to be forgotten",
+            "delete account",
+            "remove data"
+        ]
+    },
+    {
+        "name": "Right to restrict processing",
+        "category": "User rights",
+        "keywords": [
+            "right to restrict processing",
+            "restrict processing",
+            "limit processing",
+            "processing limitation",
+            "object to processing"
+        ]
+    },
+    {
+        "name": "Right to data portability",
+        "category": "User rights",
+        "keywords": [
+            "right to data portability",
+            "data portability",
+            "transfer your data",
+            "data transfer",
+            "machine-readable format",
+            "portability"
+        ]
+    },
+    {
+        "name": "Right to object",
+        "category": "User rights",
+        "keywords": [
+            "right to object",
+            "object to processing",
+            "object to marketing",
+            "opt-out",
+            "unsubscribe"
+        ]
+    },
+    {
+        "name": "Automated decision-making",
+        "category": "User rights",
+        "keywords": [
+            "automated decision-making",
+            "profiling",
+            "solely automated decisions"
+        ]
+    },
+    {
+        "name": "Right to lodge a complaint",
+        "category": "User rights",
+        "keywords": [
+            "right to lodge a complaint",
+            "lodge a complaint",
+            "supervisory authority",
+            "data protection authority",
+            "file a complaint",
+            "regulator"
+        ]
+    },
+    {
+        "name": "Data retention period",
+        "category": "Data handling",
+        "keywords": [
+            "data retention",
+            "retain your data",
+            "how long we keep",
+            "retention period",
+            "keep your data",
+            "storage duration",
+            "how long we store"
+        ]
+    },
+    {
+        "name": "Data security measures",
+        "category": "Data handling",
+        "keywords": [
+            "data security",
+            "security measures",
+            "safeguards",
+            "protect your data",
+            "encryption",
+            "access controls",
+            "secure",
+            "confidentiality"
+        ]
+    },
+    {
+        "name": "International transfers",
+        "category": "Data handling",
+        "keywords": [
+            "international data transfers",
+            "transfer your data",
+            "transfer outside",
+            "third country",
+            "adequate decision",
+            "standard contractual clauses",
+            "binding corporate rules",
+            "SCCs",
+            "Data Transfer",
+            "cross-border"
+        ]
+    },
+    {
+        "name": "Children's privacy",
+        "category": "Accountability",
+        "keywords": [
+            "children's privacy",
+            "COPPA",
+            "children",
+            "under 13",
+            "under 16",
+            "parental consent",
+            "not for children"
+        ]
+    },
+    {
+        "name": "Cookies and tracking",
+        "category": "Accountability",
+        "keywords": [
+            "cookies",
+            "tracking",
+            "pixels",
+            "local storage",
+            "session storage",
+            "web beacons",
+            "tracking technologies",
+            "advertising cookies",
+            "cookie policy",
+            "do not track"
+        ]
+    },
+    {
+        "name": "Controller and DPO contact",
+        "category": "Accountability",
+        "keywords": [
+            "contact",
+            "email",
+            "phone",
+            "address",
+            "contact us",
+            "data protection officer",
+            "DPO",
+            "privacy team",
+            "privacy inquiries",
+            "controller"
+        ]
+    },
+    {
+        "name": "Privacy policy updates",
+        "category": "Transparency",
+        "keywords": [
+            "privacy policy updates",
+            "changes to policy",
+            "modify this policy"
+        ]
     }
 ]
