@@ -1,3 +1,5 @@
+import json
+
 class Clause:
     def __init__(self, name, category, keywords):
         self.name = name
@@ -18,15 +20,22 @@ class Clause:
         else:
             self.status = "found"
 
-test_clause = Clause("Data retention period", "Data handling", ["data retention", "keep your data"])
-print(test_clause.name, "-", test_clause.status)
+#Load the clause definitions from JSON
+with open("rules/clauses.json", "r") as file:
+    clauses_data = json.load(file)
 
-legalbasis_clause = Clause("Legal basis", "Transparency", ["legal basis", "lawful basis", "legitimate interest", "consent", "contractual necessity", "Article 6","grounds for processing"])
-print(legalbasis_clause.name, "-", legalbasis_clause.status)
+#Create a Clause object for each entry
+clauses = []
+for clause_data in clauses_data:
+    clause = Clause(clause_data["name"], clause_data["category"], clause_data["keywords"])
+    clauses.append(clause)
 
-datasharing_clause = Clause("Data sharing", "Transparency", ["share your data", "third parties", "service providers", "affiliates", "legal disclosure", "recipients", "with whom we share"])
-print(datasharing_clause.name, "-", datasharing_clause.status)
+# Run a test scan against a sample policy
+sample_policy = "We collect personal data and use your information for analytics purposes."
+for clause in clauses:
+    clause.check_against(sample_policy)
 
-sample_policy = "We have a data retention period of 24 months. We will keep your data for that long."
-test_clause.check_against(sample_policy)
-print(test_clause.name, "-", test_clause.status)
+print("---")
+print("After scanning:")
+for clause in clauses:
+    print(clause.name, "—", clause.status)
