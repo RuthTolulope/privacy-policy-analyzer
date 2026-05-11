@@ -1,4 +1,5 @@
 import json
+from analyzer.fetcher import fetch_from_url
 
 class Clause:
     def __init__(self, name, category, keywords):
@@ -31,9 +32,19 @@ for clause_data in clauses_data:
     clauses.append(clause)
 
 # Run a test scan against a sample policy
-sample_policy = "We collect personal data and use your information for analytics purposes."
+# sample_policy = "We collect personal data and use your information for analytics purposes."
+test_url = "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+sample_policy = fetch_from_url(test_url)
+
+if sample_policy is None:
+    print("Could not fetch policy from", test_url)
+    exit()
+
+print("Fetched", len(sample_policy), "characters from", test_url)
+
 for clause in clauses:
     clause.check_against(sample_policy)
+
 
 print("---")
 print("After scanning:")
