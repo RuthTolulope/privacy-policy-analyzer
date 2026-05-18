@@ -1,6 +1,6 @@
 import json
 from analyzer.fetcher import fetch_from_url
-from analyzer.reporter import save_json_report
+from analyzer.reporter import save_json_report, save_csv_report
 
 class Clause:
     def __init__(self, name, category, keywords):
@@ -59,3 +59,4 @@ for clause in clauses:
 
 # Save the report to a JSON file
 save_json_report(clauses, "url", test_url, "report.json")
+save_csv_report(clauses, "report.csv")
