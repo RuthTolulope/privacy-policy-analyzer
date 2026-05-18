@@ -1,0 +1,199 @@
+{
+  "input_source_type": "url",
+  "input_source_value": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+  "scanned_at": "2026-05-18 20:28:38",
+  "summary": {
+    "found": 13,
+    "partial": 5,
+    "missing": 1
+  },
+  "findings": [
+    {
+      "name": "Data collection practices",
+      "category": "Transparency",
+      "status": "found",
+      "matched_keywords": [
+        "collect personal data",
+        "information we collect",
+        "data you provide",
+        "usage data",
+        "device information"
+      ]
+    },
+    {
+      "name": "Data use purposes",
+      "category": "Transparency",
+      "status": "found",
+      "matched_keywords": [
+        "how we use",
+        "service provision",
+        "analytics",
+        "purpose"
+      ]
+    },
+    {
+      "name": "Legal basis for processing",
+      "category": "Transparency",
+      "status": "found",
+      "matched_keywords": [
+        "legal basis",
+        "lawful basis",
+        "legitimate interest",
+        "consent",
+        "contractual necessity"
+      ]
+    },
+    {
+      "name": "Data sharing and disclosure",
+      "category": "Transparency",
+      "status": "found",
+      "matched_keywords": [
+        "share your data",
+        "third parties",
+        "service providers",
+        "affiliates",
+        "recipients"
+      ]
+    },
+    {
+      "name": "Right to access",
+      "category": "User rights",
+      "status": "found",
+      "matched_keywords": [
+        "right to access",
+        "SAR"
+      ]
+    },
+    {
+      "name": "Right to rectification",
+      "category": "User rights",
+      "status": "partial",
+      "matched_keywords": [
+        "rectify"
+      ]
+    },
+    {
+      "name": "Right to erasure",
+      "category": "User rights",
+      "status": "partial",
+      "matched_keywords": [
+        "erase"
+      ]
+    },
+    {
+      "name": "Right to restrict processing",
+      "category": "User rights",
+      "status": "missing",
+      "matched_keywords": []
+    },
+    {
+      "name": "Right to data portability",
+      "category": "User rights",
+      "status": "found",
+      "matched_keywords": [
+        "data transfer",
+        "machine-readable format"
+      ]
+    },
+    {
+      "name": "Right to object",
+      "category": "User rights",
+      "status": "found",
+      "matched_keywords": [
+        "right to object",
+        "opt-out"
+      ]
+    },
+    {
+      "name": "Automated decision-making",
+      "category": "User rights",
+      "status": "partial",
+      "matched_keywords": [
+        "profiling"
+      ]
+    },
+    {
+      "name": "Right to lodge a complaint",
+      "category": "User rights",
+      "status": "found",
+      "matched_keywords": [
+        "data protection authority",
+        "file a complaint",
+        "regulator"
+      ]
+    },
+    {
+      "name": "Data retention period",
+      "category": "Data handling",
+      "status": "partial",
+      "matched_keywords": [
+        "retention period"
+      ]
+    },
+    {
+      "name": "Data security measures",
+      "category": "Data handling",
+      "status": "found",
+      "matched_keywords": [
+        "safeguards",
+        "secure",
+        "confidentiality"
+      ]
+    },
+    {
+      "name": "International transfers",
+      "category": "Data handling",
+      "status": "found",
+      "matched_keywords": [
+        "international data transfers",
+        "standard contractual clauses",
+        "Data Transfer"
+      ]
+    },
+    {
+      "name": "Children's privacy",
+      "category": "Accountability",
+      "status": "partial",
+      "matched_keywords": [
+        "under 16"
+      ]
+    },
+    {
+      "name": "Cookies and tracking",
+      "category": "Accountability",
+      "status": "found",
+      "matched_keywords": [
+        "cookies",
+        "tracking",
+        "local storage",
+        "web beacons",
+        "tracking technologies",
+        "advertising cookies",
+        "do not track"
+      ]
+    },
+    {
+      "name": "Controller and DPO contact",
+      "category": "Accountability",
+      "status": "found",
+      "matched_keywords": [
+        "contact",
+        "email",
+        "address",
+        "contact us",
+        "data protection officer",
+        "DPO",
+        "controller"
+      ]
+    },
+    {
+      "name": "Privacy policy updates",
+      "category": "Transparency",
+      "status": "found",
+      "matched_keywords": [
+        "changes",
+        "revise"
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import json
 from analyzer.fetcher import fetch_from_url
+from analyzer.reporter import save_json_report
 
 class Clause:
     def __init__(self, name, category, keywords):
@@ -7,13 +8,18 @@ class Clause:
         self.category = category
         self.keywords = keywords
         self.status = "not checked"
+        self.matched_keywords = []
     
     def check_against(self, text):
         text = text.lower()
-        match_count = 0
+
+        self.matched_keywords = []
         for keyword in self.keywords:
             if keyword.lower() in text:
-                match_count += 1
+                self.matched_keywords.append(keyword)
+
+        match_count = len(self.matched_keywords)
+
         if match_count == 0:
             self.status = "missing"
         elif match_count == 1:
@@ -50,3 +56,6 @@ print("---")
 print("After scanning:")
 for clause in clauses:
     print(clause.name, "—", clause.status)
+
+# Save the report to a JSON file
+save_json_report(clauses, "url", test_url, "report.json")
