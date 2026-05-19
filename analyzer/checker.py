@@ -1,5 +1,5 @@
 import json
-from analyzer.fetcher import fetch_from_url
+from analyzer.fetcher import fetch_from_url, fetch_from_file
 from analyzer.reporter import save_json_report, save_csv_report
 
 class Clause:
@@ -37,26 +37,38 @@ for clause_data in clauses_data:
     clause = Clause(clause_data["name"], clause_data["category"], clause_data["keywords"])
     clauses.append(clause)
 
-# Run a test scan against a sample policy
-# sample_policy = "We collect personal data and use your information for analytics purposes."
-test_url = "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
-sample_policy = fetch_from_url(test_url)
+# Input
+# Choose One: URL or local file
 
+# Option A: URL
+# test_url = "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+# source_type = "url"
+# source_value = test_url
+# sample_policy = fetch_from_url(test_url)
+
+# Option B: Local file
+test_file = "fake_file.txt"
+source_type = "file"
+source_value = test_file
+sample_policy = fetch_from_file(test_file)
+
+# Verify
 if sample_policy is None:
-    print("Could not fetch policy from", test_url)
+    print(f"Could not fetch policy from {source_value}. Stopping.")
     exit()
 
-print("Fetched", len(sample_policy), "characters from", test_url)
+print(f"Loaded {len(sample_policy)} characters from {source_value}")
 
+# Scan
 for clause in clauses:
     clause.check_against(sample_policy)
 
-
+# Report
 print("---")
 print("After scanning:")
 for clause in clauses:
     print(clause.name, "—", clause.status)
 
-# Save the report to a JSON file
-save_json_report(clauses, "url", test_url, "report.json")
+# Save report
+save_json_report(clauses, source_type, source_value, "report.json")
 save_csv_report(clauses, "report.csv")

@@ -1,20 +1,20 @@
 Name,Category,Status,Matched Keywords
-Data collection practices,Transparency,found,collect personal data; information we collect; data you provide; usage data; device information
-Data use purposes,Transparency,found,how we use; service provision; analytics; purpose
-Legal basis for processing,Transparency,found,legal basis; lawful basis; legitimate interest; consent; contractual necessity
-Data sharing and disclosure,Transparency,found,share your data; third parties; service providers; affiliates; recipients
-Right to access,User rights,found,right to access; SAR
-Right to rectification,User rights,partial,rectify
-Right to erasure,User rights,partial,erase
+Data collection practices,Transparency,partial,collect personal data
+Data use purposes,Transparency,found,use your information; analytics; purpose
+Legal basis for processing,Transparency,missing,
+Data sharing and disclosure,Transparency,found,share your data; third parties
+Right to access,User rights,partial,right to access
+Right to rectification,User rights,missing,
+Right to erasure,User rights,missing,
 Right to restrict processing,User rights,missing,
-Right to data portability,User rights,found,data transfer; machine-readable format
-Right to object,User rights,found,right to object; opt-out
-Automated decision-making,User rights,partial,profiling
-Right to lodge a complaint,User rights,found,data protection authority; file a complaint; regulator
-Data retention period,Data handling,partial,retention period
-Data security measures,Data handling,found,safeguards; secure; confidentiality
-International transfers,Data handling,found,international data transfers; standard contractual clauses; Data Transfer
-Children's privacy,Accountability,partial,under 16
-Cookies and tracking,Accountability,found,cookies; tracking; local storage; web beacons; tracking technologies; advertising cookies; do not track
-Controller and DPO contact,Accountability,found,contact; email; address; contact us; data protection officer; DPO; controller
-Privacy policy updates,Transparency,found,changes; revise
+Right to data portability,User rights,missing,
+Right to object,User rights,missing,
+Automated decision-making,User rights,missing,
+Right to lodge a complaint,User rights,missing,
+Data retention period,Data handling,found,data retention; retention period
+Data security measures,Data handling,found,protect your data; encryption
+International transfers,Data handling,missing,
+Children's privacy,Accountability,missing,
+Cookies and tracking,Accountability,missing,
+Controller and DPO contact,Accountability,found,contact; data protection officer; DPO
+Privacy policy updates,Transparency,missing,

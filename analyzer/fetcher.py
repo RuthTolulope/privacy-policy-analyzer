@@ -11,3 +11,20 @@ def fetch_from_url(url):
     except requests.exception.RequestException as e:
         print(f"Error fetching {url}: {e}")
         return None
+
+def fetch_from_file(file_path):
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            text=file.read()
+        if not text.strip():
+            print(f"File {file_path} is empty.")
+            return None
+        
+        return text
+        
+    except FileNotFoundError:
+        print(f"File not found: {file_path}")
+        return None
+    except OSError as e:
+        print(f"Error reading file {file_path}: {e}")
+        return None
