@@ -1,5 +1,3 @@
-import json
-
 class Clause:
     def __init__(self, name, category, keywords):
         self.name = name
