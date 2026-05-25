@@ -15,7 +15,7 @@ def load_clauses():
     return clauses
 
 def get_policy_text():
-    choice = input("Scan a URL or a file? Type 'url' or 'file': ")
+    choice = input("Scan a URL or a file? Type 'url' or 'file': ").lower()
 
     if choice == "url":
         url = input("Enter the URL: ")

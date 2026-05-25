@@ -2,13 +2,13 @@ import json
 import csv
 from datetime import datetime
 
-def save_json_report(clauses,source_type, source_value, output_path="report.json"):
+def save_json_report(clauses, source_type, source_value, output_path="report.json"):
     # Build summary count
     summary = {"found": 0, "partial": 0, "missing": 0}
     for clause in clauses:
         summary[clause.status] += 1
     
-    #Build detailed findings
+    # Build detailed findings
     findings = []
     for clause in clauses:
         findings.append({
