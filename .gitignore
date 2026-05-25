@@ -1,0 +1,13 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated reports
+report.json
+report.csv
+
+# OS files
+.DS_Store
