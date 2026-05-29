@@ -110,7 +110,7 @@ python3 -m pytest -v
 
 ## Limitations
 
-This tool uses **keyword-based substring matching**. It is designed as a fast first-pass triage, not a definitive legal assessment, and has known limitations:
+This tool uses keyword-based substring matching. It is designed as a fast first-pass triage, not a definitive legal assessment, and has known limitations:
 
 - **Vocabulary drift**: a policy may fully address a clause using different wording than the configured keywords. For example, a policy that says *"changes to our privacy statement"* may be scored lower by keywords expecting the word *"policy"* rather than *"statement"*.
 - **No semantic understanding**: the matcher cannot tell that *"limit the processing"* and *"limit processing"* mean the same thing; even a single extra word can break a match.
@@ -123,3 +123,10 @@ These trade-offs are deliberate: keyword matching is fast, transparent, and easy
 - A web interface (e.g. FastAPI) so policies can be scanned from a browser.
 - Expanded and refined keyword sets per clause.
 - Support for additional jurisdictions beyond GDPR.
+- Implement keyBERT for context aware keyword identification
+
+## Future Work
+- CodeAcademy
+- Labex.io
+- Chatgpt - explanation of concepts in easy to understand manner with examples
+- Stack Overflow
