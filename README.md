@@ -125,7 +125,7 @@ These trade-offs are deliberate: keyword matching is fast, transparent, and easy
 - Support for additional jurisdictions beyond GDPR.
 - Implement keyBERT for context aware keyword identification
 
-## Future Work
+## Resources
 - CodeAcademy
 - Labex.io
 - Chatgpt - explanation of concepts in easy to understand manner with examples
